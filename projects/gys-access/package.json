@@ -1,6 +1,18 @@
 {
   "name": "gys-access",
   "version": "0.0.1",
+  "description": "Lib Test gys",
+  "homepage": "https://github.com/cyenque/gys-access",
+  "bugs":{
+    "url" : "https://github.com/cyenque/gys-access",
+    "email" : "cyenque@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name" : "Cesar Yenque",
+    "email" : "cyenque@gmail.com",
+    "url" : "https://github.com/cyenque"
+  },
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
