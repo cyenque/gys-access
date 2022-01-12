@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "gys-access": {
+      "projectType": "library",
+      "root": "projects/gys-access",
+      "sourceRoot": "projects/gys-access/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/gys-access/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/gys-access/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/gys-access/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/gys-access/src/test.ts",
+            "tsConfig": "projects/gys-access/tsconfig.spec.json",
+            "karmaConfig": "projects/gys-access/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "gys-access"
 }
